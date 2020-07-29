@@ -39,16 +39,16 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   var elem = html.document.activeElement;
 
-  @override
-  void initState() {
-    if (elem != null && elem.tagName == 'IFRAME') {
-      Timer.periodic(Duration(milliseconds: 100), (timer) {
-        // print(timer.tick.toString());
-        html.window.alert("You're being redirected to lol");
-      });
-    }
-    super.initState();
-  }
+  // @override
+  // void initState() {
+  //   if (elem != null && elem.tagName == 'IFRAME') {
+  //     Timer.periodic(Duration(milliseconds: 100), (timer) {
+  //       // print(timer.tick.toString());
+  //       html.window.alert("You're being redirected to lol");
+  //     });
+  //   }
+  //   super.initState();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -84,9 +84,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
                 // html.window.alert("KAPPA KAPPA KAPPA");
 
-                // if (elem != null && elem.tagName == 'IFRAME') {
-                //   html.window.alert("LOL lol");
-                // }
+                if (elem != null && elem.tagName == 'IFRAME') {
+                  html.window.alert("LOL lol");
+                }
               },
               child: FlutterLogo(
                 size: 100.0,
