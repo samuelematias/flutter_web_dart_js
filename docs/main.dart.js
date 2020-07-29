@@ -11666,7 +11666,7 @@ _.d=a
 _.a=null
 _.b=b
 _.c=null},
-Oj:function Oj(a){this.a=a},
+Oj:function Oj(){},
 Ok:function Ok(){},
 Ol:function Ol(){},
 CE:function(){var s=0,r=P.an(t.H),q,p,o,n,m,l
@@ -38270,15 +38270,14 @@ F.od.prototype={
 aM:function(){return new F.Aj(document.activeElement,C.q)}}
 F.Aj.prototype={
 M:function(a){var s=null,r=L.VD(this.a.c,s)
-return new M.oZ(new E.mB(r,new P.T(1/0,56),s),M.tx(C.ao,T.a0a(H.b([R.RW(!1,!0,new X.uw(100,s),s,!0,s,s,s,s,s,s,s,s,s,new F.Oj(this),s),R.RW(!1,!0,new U.nE(M.a08(s,s,new D.kI("https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",1)),100,100,s),s,!0,s,s,s,s,s,s,s,s,s,new F.Ok(),s)],t.t),C.nh,C.o6,C.o7),C.vN,s,s,s,s,s,s,s),E.Ut(L.UB(C.tY),!1,new F.Ol()),s)}}
+return new M.oZ(new E.mB(r,new P.T(1/0,56),s),M.tx(C.ao,T.a0a(H.b([R.RW(!1,!0,new X.uw(100,s),s,!0,s,s,s,s,s,s,s,s,s,new F.Oj(),s),R.RW(!1,!0,new U.nE(M.a08(s,s,new D.kI("https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",1)),100,100,s),s,!0,s,s,s,s,s,s,s,s,s,new F.Ok(),s)],t.t),C.nh,C.o6,C.o7),C.vN,s,s,s,s,s,s,s),E.Ut(L.UB(C.tY),!1,new F.Ol()),s)}}
 F.Oj.prototype={
 $0:function(){var s,r=window.localStorage;(r&&C.x1).GZ(r,H.b([new P.ff("data","this data is stored on browser local storage",t.DO)],t.EK))
 r=$.mj()
 s=P.UL(r.h(0,"Object"),null)
 s.m(0,"message","Flutter Web")
 r.h(0,"console").b2("log",["still in the same page","\n",s.h(0,"message")])
-r=this.a.d
-if(r!=null&&r.tagName==="IFRAME")window.alert("LOL lol")},
+window.alert("KAPPA KAPPA KAPPA")},
 $S:0}
 F.Ok.prototype={
 $0:function(){window.alert("You're being redirected to \n https://github.com/vaygeth89/flutter_for_web_part1")
