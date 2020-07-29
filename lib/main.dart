@@ -37,9 +37,10 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  var elem = html.document.activeElement;
+
   @override
   void initState() {
-    var elem = html.document.activeElement;
     if (elem != null && elem.tagName == 'IFRAME') {
       Timer.periodic(Duration(milliseconds: 100), (timer) {
         // print(timer.tick.toString());
@@ -81,7 +82,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 js.context["console"].callMethod("log",
                     ['still in the same page', '\n', jsonObject["message"]]);
 
-                html.window.alert("KAPPA KAPPA KAPPA");
+                // html.window.alert("KAPPA KAPPA KAPPA");
+
+                // if (elem != null && elem.tagName == 'IFRAME') {
+                //   html.window.alert("LOL lol");
+                // }
               },
               child: FlutterLogo(
                 size: 100.0,
