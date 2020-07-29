@@ -2,6 +2,10 @@
 
 A new Flutter project.
 
+## Links
+
+- [Early Adaption for Flutter Web: Dart’s HTML & JavaScript Proxying](https://medium.com/@vaygeth/flutter-web-darts-html-javascript-proxying-to-access-the-dom-69e2008eb320).
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
