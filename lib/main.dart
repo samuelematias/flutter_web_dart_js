@@ -82,11 +82,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 js.context["console"].callMethod("log",
                     ['still in the same page', '\n', jsonObject["message"]]);
 
-                // html.window.alert("KAPPA KAPPA KAPPA");
+                html.window.alert("KAPPA KAPPA KAPPA");
 
-                if (elem != null && elem.tagName == 'IFRAME') {
-                  html.window.alert("LOL lol");
-                }
+                // if (elem != null && elem.tagName == 'IFRAME') {
+                //   html.window.alert("LOL lol");
+                // }
               },
               child: FlutterLogo(
                 size: 100.0,
