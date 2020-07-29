@@ -1766,7 +1766,7 @@ this.b=b
 this.c=c},
 pA:function pA(a){this.b=a},
 aj:function aj(a){this.a=a},
-yc:function yc(){this.a=!0},
+yc:function yc(){this.a=!1},
 M1:function M1(){},
 F5:function F5(a,b,c,d,e,f,g){var _=this
 _.d=null
@@ -11661,9 +11661,11 @@ xe:function xe(a){this.a=a},
 vq:function vq(a){this.a=a},
 od:function od(a,b){this.c=a
 this.a=b},
-Aj:function Aj(a){this.a=null
-this.b=a
-this.c=null},
+Aj:function Aj(a,b){var _=this
+_.d=a
+_.a=null
+_.b=b
+_.c=null},
 Om:function Om(){},
 Oj:function Oj(){},
 Ok:function Ok(){},
@@ -18785,7 +18787,7 @@ return s}}
 H.yc.prototype={
 Bo:function(){$.mj().m(0,"_flutter_internal_update_experiment",this.gLm())
 $.eb.push(new H.M1())},
-Ln:function(a,b){switch(a){case"useCanvasText":this.a=b!==!1
+Ln:function(a,b){switch(a){case"useCanvasText":this.a=b===!0
 break}}}
 H.M1.prototype={
 $0:function(){$.mj().m(0,"_flutter_internal_update_experiment",null)},
@@ -38266,9 +38268,9 @@ return!1}return!0}}
 F.vq.prototype={
 M:function(a){return new S.o1(new F.od("Home Page",null),"Flutter for Web Demo - Part 1",X.VH(null,C.lm),null)}}
 F.od.prototype={
-aM:function(){return new F.Aj(C.q)}}
+aM:function(){return new F.Aj(document.activeElement,C.q)}}
 F.Aj.prototype={
-aY:function(){var s=document.activeElement
+aY:function(){var s=this.d
 if(s!=null&&s.tagName==="IFRAME")P.VI(P.dJ(0,100),new F.Om())
 this.bh()},
 M:function(a){var s=null,r=L.VE(this.a.c,s)
@@ -38280,8 +38282,7 @@ $0:function(){var s,r=window.localStorage;(r&&C.x1).GZ(r,H.b([new P.ff("data","t
 r=$.mj()
 s=P.UM(r.h(0,"Object"),null)
 s.m(0,"message","Flutter Web")
-r.h(0,"console").b2("log",["still in the same page","\n",s.h(0,"message")])
-window.alert("KAPPA KAPPA KAPPA")},
+r.h(0,"console").b2("log",["still in the same page","\n",s.h(0,"message")])},
 $S:0}
 F.Ok.prototype={
 $0:function(){window.alert("You're being redirected to \n https://github.com/vaygeth89/flutter_for_web_part1")
