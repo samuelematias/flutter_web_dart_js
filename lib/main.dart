@@ -93,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
             InkWell(
               onTap: () {
                 String externalUrl =
-                    'https://github.com/vaygeth89/flutter_for_web_part1';
+                    'https://samuelematias.github.io/flutter_web_dart_js/';
                 html.window.alert("You're being redirected to \n $externalUrl");
 
                 //Dart to Javascript Proxying
