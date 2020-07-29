@@ -38280,8 +38280,8 @@ r.h(0,"console").b2("log",["still in the same page","\n",s.h(0,"message")])
 window.alert("KAPPA KAPPA KAPPA")},
 $S:0}
 F.Ok.prototype={
-$0:function(){window.alert("You're being redirected to \n https://samuelematias.github.io/flutter_web_dart_js/")
-$.mj().b2("open",["https://samuelematias.github.io/flutter_web_dart_js/"])},
+$0:function(){window.alert("You're being redirected to \n https://github.com/samuelematias/flutter_web_dart_js")
+$.mj().b2("open",["https://github.com/samuelematias/flutter_web_dart_js"])},
 $S:0}
 F.Ol.prototype={
 $0:function(){window.location.reload()},
