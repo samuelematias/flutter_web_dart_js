@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
               onTap: () {
                 final String _url = html.window.location.href;
                 final String _queryParameters =
-                    '${Uri.base.toString()} || ${Uri.base.query} || ${Uri.base.queryParameters['randomNumber']}';
+                    '${Uri.base.toString()} || ${Uri.base.query} || ${Uri.base.queryParameters['randomNumber']} || ${Uri.base.queryParameters['token']} || ${Uri.base.queryParameters['utm_source']}';
                 //Dart to HTML Proxying
                 html.window.localStorage.addEntries([
                   MapEntry(
@@ -110,10 +110,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 //Executes javascripts window.open(https://github.com/vaygeth89/flutter_for_web_part1, '');
                 js.context.callMethod("open", [externalUrl]);
               },
-              child: Image.network(
-                "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-                width: 100,
+              child: FadeInImage.assetNetwork(
+                placeholder:
+                    'assets/images/img-placeholder.png', // Before image load
+                image:
+                    'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png', // After image load
                 height: 100,
+                width: 100,
               ),
             )
           ],
