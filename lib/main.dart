@@ -63,6 +63,9 @@ class _MyHomePageState extends State<MyHomePage> {
             // InkWell is widget used to add taps & gestures events to child
             InkWell(
               onTap: () {
+                final String _url = html.window.location.href;
+                final String _queryParameters =
+                    '${Uri.base.toString()} || ${Uri.base.query} || ${Uri.base.queryParameters['randomNumber']}';
                 //Dart to HTML Proxying
                 html.window.localStorage.addEntries([
                   MapEntry(
@@ -80,11 +83,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 js.context["console"].callMethod("log",
                     ['still in the same page', '\n', jsonObject["message"]]);
 
-                html.window.alert("KAPPA KAPPA KAPPA");
+                html.window.alert("KAPPA $_url || $_queryParameters");
 
                 // if (elem != null && elem.tagName == 'IFRAME') {
                 //   html.window.alert("LOL lol");
                 // }
+
+                print(Uri.base
+                    .toString()); // http://localhost:8082/game.html?id=15&randomNumber=3.14
+                print(Uri.base.query); // id=15&randomNumber=3.14
+                print(Uri.base.queryParameters['randomNumber']); // 3.14
+
+                jsonObject["message"] = '$_queryParameters';
               },
               child: FlutterLogo(
                 size: 100.0,
